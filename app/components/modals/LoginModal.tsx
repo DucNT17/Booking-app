@@ -61,7 +61,6 @@ const LoginModal = () => {
                     }
                 });
         }
-
     const onToggle = useCallback(() => {
         loginModal.onClose();
         registerModal.onOpen();
