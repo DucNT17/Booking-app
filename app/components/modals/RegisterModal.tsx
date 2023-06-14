@@ -56,10 +56,10 @@ const RegisterModal = () => {
             })
     }
 
-    const onToggle = useCallback(() => {
+    const toggle = useCallback(() => {
         registerModal.onClose();
         loginModal.onOpen();
-    }, [registerModal, loginModal])
+    }, [loginModal, registerModal])
 
     const bodyContent = (
         <div className="flex flex-col gap-4">
@@ -120,13 +120,12 @@ const RegisterModal = () => {
             >
                 <p>Already have an account?
                     <span
-                        onClick={onToggle}
+                        onClick={toggle}
                         className="
-              text-neutral-800
-              cursor-pointer 
-              hover:underline
-            "
-                    > Log in</span>
+                    text-neutral-800
+                        cursor-pointer 
+                        hover:underline
+                    "> Log in</span>
                 </p>
             </div>
         </div>
