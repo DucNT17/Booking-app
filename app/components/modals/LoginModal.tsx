@@ -61,7 +61,7 @@ const LoginModal = () => {
                     }
                 });
         }
-    const onToggle = useCallback(() => {
+    const toggle = useCallback(() => {
         loginModal.onClose();
         registerModal.onOpen();
     }, [loginModal, registerModal])
@@ -111,13 +111,12 @@ const LoginModal = () => {
       text-neutral-500 text-center mt-4 font-light">
                 <p>First time using Airbnb?
                     <span
-                        onClick={onToggle}
+                        onClick={toggle}
                         className="
-              text-neutral-800
-              cursor-pointer 
-              hover:underline
-            "
-                    > Create an account</span>
+                      text-neutral-800
+                        cursor-pointer 
+                        hover:underline
+                        "> Create an account</span>
                 </p>
             </div>
         </div>
