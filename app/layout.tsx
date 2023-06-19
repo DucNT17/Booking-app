@@ -13,8 +13,8 @@ import getCurrentUser from './actions/getCurrentUser';
 import SearchModal from './components/modals/SearchModal';
 
 export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb Clone',
+  title: 'Booking-app',
+  description: 'Booking application',
 }
 
 const font = Nunito({ 
